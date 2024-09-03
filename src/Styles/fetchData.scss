@@ -1,0 +1,59 @@
+    .container_main{
+        display: flex;
+        justify-content: center;
+        margin-top: 25px;
+        height: 60vh;
+        .container_main2{
+            display: flex;
+            width: 80%;
+            height: 100%;
+            background-color: #e3e3e3;
+            border-radius: 30px;
+            .container_article{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                align-items: center;
+                overflow: scroll;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            
+                .card{
+                    display: flex;
+                    align-items: flex-end;
+                    width: 28%;
+                    height: 35%;
+                    padding-bottom: 15px;
+                    padding-left: 15px;
+                    border-radius: 7px;
+                    color: white;
+                    text-decoration: none;
+                    cursor: pointer;
+                    font-size: 20x;
+                }
+            }
+        }
+    }
+    @media (max-width: 900px) {
+        .container_main{
+            width: 100%;
+            max-width: 100%;
+            .container_main2{
+                width: 95%;
+                justify-content: center;
+                .container_article{
+                    width: 90%;
+                    .card{
+                        display: flex;
+                        width: 100%;
+                    }
+    
+                }       
+            }  
+       
+        }
+        
+    }
+
+

@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+.element_p_nav{
+    font-size: 24px;
+}
+nav{ 
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    
+    .navBar{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        h1{
+            color: red;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .navBar_element{
+            display: flex;
+            a{
+                margin: 20px;
+                color: black;
+                text-decoration: none;
+            }
+    
+        }
+    }
+    
+    
+    } 
+.navBar_element2{
+    display: flex;
+    justify-content: center;
+        .navBar_element3{
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 110px;
+            
+            border-radius: 20px;
+            p{
+                font-size: 27px;
+                color: white;
+            }
+            
+}
+}
+.adjustement{
+    width: 80%;
+    border-radius: 20px;
+    height: 160px;
+    background: linear-gradient(to left,rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.60)), url('../assets/images/ImageSource1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+}
+.header_contain{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 900px) {
+    .adjustement{
+        width: 95%;
+    }
+    .navBar_element2{
+        width: 100%;
+    }
+    nav{ 
+        display: flex;
+        justify-content: center;
+        .navBar{
+            width: 95%;
+        }
+    }
+
+}
+@media (max-width: 600px){
+    
+    .navBar img{
+        width: 160px;
+        height: 50px;
+    }
+    .navBar_element{
+        display: flex;
+        .element_p_nav{
+            font-size: 15px;
+            color: black;
+        }
+    }
+    .navBar_element2{
+        width: 100%;
+        .image_2{
+            width: 95%;
+        }
+    }
+}
