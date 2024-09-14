@@ -1,4 +1,4 @@
-import '../Styles/NavBar.scss';
+import '../Styles/navBar.scss';
 //import image1 from './images/ImageSource1.png';
  
 export default function Header() {

@@ -1,4 +1,4 @@
-import '../Styles/NavBar.scss';
+import '../Styles/navBar.scss';
 import '../Styles/propos.scss';
 import CollapsePart2 from './CollapsePart2'
 

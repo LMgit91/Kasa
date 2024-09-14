@@ -7,12 +7,12 @@ import {faAngleRight} from "@fortawesome/free-solid-svg-icons";
 import {faAngleLeft} from "@fortawesome/free-solid-svg-icons";
 import CollapsePart2 from "./CollapsePart2";
 import {faStar} from "@fortawesome/free-solid-svg-icons";
-
+//This function expose the element when you choose an appartment.
 export default function LocationList({dataAppartement}){
     const param = useParams();
     const userId =  param.id.slice(1);
     const navig = useNavigate();
-    const [dataDetails, setDataDetails] = useState(dataAppartement)
+    const [dataDetails] = useState(dataAppartement)
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {

@@ -1,6 +1,6 @@
 import logoFooter from '../assets/images/LOGO_blanc.png';
 import '../Styles/footer.scss'
-
+//This function is the footer of the website
 export default function Footer(){
     return(<div>
                 <div className='footer_main'>

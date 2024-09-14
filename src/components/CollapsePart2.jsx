@@ -1,10 +1,10 @@
-import '../Styles/NavBar.scss';
+import '../Styles/navBar.scss';
 import '../Styles/propos.scss';
 import { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faAngleUp} from "@fortawesome/free-solid-svg-icons";
 import {faAngleDown} from "@fortawesome/free-solid-svg-icons";
-
+//This function is the collapse, when you click on the arrow the text will appear or disappear.
 export default function CollapseItem({title, content}){
     
     const[showText, setShowText] = useState(false);
