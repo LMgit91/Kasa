@@ -1,11 +1,11 @@
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import '../Styles/locationList.scss';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import CollapsePart2 from "./CollapsePart2";
-import {faStar} from "@fortawesome/free-solid-svg-icons";
 import Caroussel from "./Caroussel";
+import Host from "./Host";
+import Rating from "./Rating";
+import NameInfo from "./NameInfo";
 //This function expose the element when you choose an appartment.
 export default function LocationList({dataAppartement}){
     const param = useParams();
@@ -38,24 +38,15 @@ export default function LocationList({dataAppartement}){
                     </div>
                     <div className="small_bloc_ajustment_one">
                         <div className="small_bloc_ajustment_two">
-                            <div className="location_name_bloc1">
-                                <p className="detail_aboutlocation">{urlLocation1 && valueLocation.title}</p>
-                                <p className="localisation_detail">{urlLocation1 && valueLocation.location}</p>
-                            </div>
-                            <div className="location_name_bloc2">
-                                <p className="location_name_bloc2_p">{urlLocation1 && valueLocation.host.name}</p>
-                                <div className="picture_ownner" style={urlLocation1 && {backgroundImage : `url(${valueLocation.host.picture})`}}></div>
+                                <NameInfo dataStorage={valueLocation} />
+                            <div>
+                                <Host dataStorage={valueLocation} />
                             </div>
                             <div className="circle_contain">
                                 {tags}  
                             </div>
                             <div className="star_contain">
-                                <div className="star_element">
-                                    {urlLocation1 && [...Array(5)].map((item, index) =>{
-                                        const rate = urlLocation1 && parseInt(valueLocation.rating);
-                                        return <FontAwesomeIcon key={index} className={`span_star ${rate <= index ? 'star_rating2' : 'star_rating'}`} style={{'fontSize': 30}}  icon={faStar} />
-                                    })}
-                                </div>
+                                <Rating dataStorage={valueLocation} />
                             </div>
                         </div>
                     </div>

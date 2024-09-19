@@ -1,10 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.box_contain{
-    height: 80vh;
-}
+
 .location_main_container{
     height: 450px;
     display: flex;
@@ -30,7 +24,7 @@
     height: 60px;
     border-radius: 50%;
     margin-left: 8px;
-    background-position:  bottom 70px  left 95px;
+    object-fit: cover;
 }
 .detail_aboutlocation{
     color: #FF6060;
@@ -71,7 +65,7 @@
     flex: 1 1 auto;
 }
 main{
-    min-height: 80%;
+    min-height: 80vh;
 }
 .spanEquipmentAdjustement{
    width: 100%;
@@ -213,6 +207,6 @@ main{
         order: 1;
     }
     .box_contain{
-        height: 100vh;
+        min-height: 100vh;
     }
 }

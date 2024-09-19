@@ -1,6 +1,4 @@
-body{
-    height: 80%;
-}
+
 img{
     object-fit: cover;
 }
@@ -13,7 +11,7 @@ img{
     display: flex;
     justify-content: center;
     margin-top: 25px;
-    height: 80vh;
+    min-height: 80vh;
     padding-top: 40px;
 }
 .container{
@@ -21,7 +19,7 @@ img{
     flex-direction: column;
     gap: 30px;
     width: 70%;
-    height: 500px; 
+    min-height: 500px; 
 }
 .box2{
     display: flex;
@@ -48,8 +46,8 @@ img{
 .non_visibility{
     display: none;
 }
-.rotateFa{
-    transform: rotate(180deg);
+.collapseSpan{
+    cursor: pointer;
 }
 
 @media (max-width: 900px) {
