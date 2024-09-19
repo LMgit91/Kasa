@@ -55,7 +55,7 @@ const router = createBrowserRouter([
 ]);
 
 export default function App(){
-   return(<div style={{'fontFamily': "Montserrat"}}>
+   return(<div>
             <RouterProvider router={router} />
         </div>); 
 }

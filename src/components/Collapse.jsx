@@ -4,7 +4,7 @@ import CollapsePart2 from './CollapsePart2'
 
 export default function Collapse({data}){
     return(
-        <div style={{'height': '57vh'}}>
+        <div>
             <div className='main_container'>
                 <div className='container'>   
                     {

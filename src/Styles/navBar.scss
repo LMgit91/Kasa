@@ -29,6 +29,9 @@ nav{
                 color: black;
                 text-decoration: none;
             }
+            a.active{
+                text-decoration: underline;
+            }
     
         }
     }
@@ -109,5 +112,10 @@ nav{
         .image_2{
             width: 95%;
         }
+    }
+}
+@media (max-width: 500px){
+    .image_2{
+        font-size: 30px;
     }
 }

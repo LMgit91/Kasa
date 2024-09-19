@@ -12,26 +12,45 @@
             .container_article{
                 display: flex;
                 flex-wrap: wrap;
-                gap: 20px;
+                gap: 40px;
                 justify-content: center;
                 align-items: center;
                 overflow: scroll;
                 padding-top: 50px;
                 padding-bottom: 50px;
-            
-                .card{
-                    display: flex;
-                    align-items: flex-end;
+
+                .linkAdjustment{
                     width: 28%;
-                    height: 35%;
-                    padding-bottom: 15px;
-                    padding-left: 15px;
-                    border-radius: 7px;
-                    color: white;
+                    height: 200px;
                     text-decoration: none;
-                    cursor: pointer;
-                    font-size: 20x;
+                    display: flex;
+                    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(0,0,0,0.3));
                 }
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                    border-radius: 7px;
+                    height: 100%;
+                }
+                figure{
+                    width: 100%;
+                    height: 100%;
+                }
+                figcaption{
+                    color: white;
+                    font-size: 15px;
+                    text-align: start;
+                    position: relative;
+                    bottom: 30px;
+                    left: 10px;
+                }
+                @media (max-width: 480px){
+                    figcaption{
+                        bottom: 40px;
+                    }
+                }
+            
+               
             }
         }
     }
@@ -44,7 +63,7 @@
                 justify-content: center;
                 .container_article{
                     width: 90%;
-                    .card{
+                    .linkAdjustment{
                         display: flex;
                         width: 100%;
                     }
