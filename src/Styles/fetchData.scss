@@ -2,7 +2,7 @@
         display: flex;
         justify-content: center;
         margin-top: 25px;
-        height: 60vh;
+        min-height: 60vh;
         .container_main2{
             display: flex;
             width: 80%;
@@ -15,10 +15,8 @@
                 gap: 40px;
                 justify-content: center;
                 align-items: center;
-                overflow: scroll;
                 padding-top: 50px;
                 padding-bottom: 50px;
-
                 .linkAdjustment{
                     width: 28%;
                     height: 200px;
@@ -74,5 +72,16 @@
         }
         
     }
-
+    @media (max-width: 1425px){
+        .container_main .container_main2 .container_article figcaption {
+            font-size: 12px;
+            bottom: 40px;
+        }
+    }
+    @media (max-width: 1781px){
+        .container_main .container_main2 .container_article figcaption {
+            bottom: 40px;
+        }
+        
+    }
 

@@ -119,3 +119,18 @@ nav{
         font-size: 30px;
     }
 }
+@media (max-width: 420px){
+    .navBar_element{
+        display: flex;
+        font-size: 12px;
+        a{
+            margin-left: 5px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }.element_p_nav{
+            font-size: 12px;
+        }
+
+    }
+}

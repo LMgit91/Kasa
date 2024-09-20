@@ -1,3 +1,10 @@
+/*
+<div className="slide_container" style={dataStorage && {backgroundImage: `url(${dataStorage.pictures[currentIndex]})`}}>
+                <span onClick={buttonLeft} className="button_slider"> {dataStorage.pictures.length > 1 && <FontAwesomeIcon  icon={faAngleLeft} />}</span>
+                <span className="numberAdjustment"> { dataStorage.pictures.indexOf(dataStorage.pictures[currentIndex]) + 1}/{dataStorage.pictures.length}</span>
+                <span onClick={buttonRight} className="button_slider">{dataStorage.pictures.length > 1 &&<FontAwesomeIcon icon={faAngleRight} />}</span>
+            </div> 
+*/
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faAngleRight} from "@fortawesome/free-solid-svg-icons";
@@ -17,10 +24,13 @@ export default function Caroussel({dataStorage}){
      }
 
     return(
-            <div className="slide_container" style={dataStorage && {backgroundImage: `url(${dataStorage.pictures[currentIndex]})`}}>
-                <span onClick={buttonLeft} className="button_slider"> {dataStorage.pictures.length > 1 && <FontAwesomeIcon  icon={faAngleLeft} />}</span>
-                <span className="numberAdjustment"> { dataStorage.pictures.indexOf(dataStorage.pictures[currentIndex]) + 1}/{dataStorage.pictures.length}</span>
-                <span onClick={buttonRight} className="button_slider">{dataStorage.pictures.length > 1 &&<FontAwesomeIcon icon={faAngleRight} />}</span>
+            <div className="slide_container">
+                <img className="imageSlider" src={dataStorage && dataStorage.pictures[currentIndex]} alt={`une image de l'appartement de ${dataStorage && dataStorage.host.name}`} />
+                <span className="sliderDiv">
+                    <span onClick={buttonLeft} className="button_slider"> {dataStorage && dataStorage.pictures.length > 1 && <FontAwesomeIcon  icon={faAngleLeft} />}</span>
+                    <span className="numberAdjustment"> {dataStorage && dataStorage.pictures.indexOf(dataStorage.pictures[currentIndex]) + 1}/{dataStorage && dataStorage.pictures.length}</span>
+                    <span onClick={buttonRight} className="button_slider">{dataStorage && dataStorage.pictures.length > 1 &&<FontAwesomeIcon icon={faAngleRight} />}</span>
+                </span>
             </div> 
     )
 }

@@ -8,9 +8,9 @@
     height: 100%;
     width: 80%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border-radius: 20px;
 }
 .button_slider{
     font-size: 70px;
@@ -18,6 +18,26 @@
     color: white;
     padding-left: 15px;
     padding-right: 15px;
+}
+.imageSlider{
+    border-radius: 20px;
+    object-fit: cover;
+    min-height: 90%;
+    max-height: 100%;
+    width: 100%;
+}
+.sliderDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 45px;
+    position: relative;
+    bottom: 250px;
+}
+@media (max-width: 700px){
+    .sliderDiv{
+       bottom: 200px;
+    }
 }
 .picture_ownner{
     width: 60px;
@@ -34,7 +54,7 @@
     font-size: 20px;
 }
 .location_name_bloc1{
-    width: 50%;
+    width: 80%;
 }
 .location_name_bloc2{
     display: flex;
@@ -116,14 +136,37 @@ main{
     gap: 20px;
 }
 .numberAdjustment{
-    margin-top: 350px;
+    margin-top: 200px;
     color: white;
 }
 .disapear{
     display: none;
 }
-
-
+@media (max-width: 1450px){
+    .detail_aboutlocation{
+        font-size: 30px;
+    }
+}
+@media (max-width: 1273px){
+    .detail_aboutlocation{
+        font-size: 20px;
+    }
+    .location_name_bloc1{
+        width: 60%;
+    }
+}
+@media (max-width: 1110px){
+    .detail_aboutlocation{
+        font-size: 15px;
+    }
+    
+}
+@media (max-width: 1000px){
+    .detail_aboutlocation{
+        font-size: 12px;
+    }
+    
+}
 @media (max-width: 700px){
     .contain_description_equipement2{
         width: 90%;
@@ -164,7 +207,9 @@ main{
     }
     .star_contain{
         width: 30%;
+        order: 2;
     }
+   
     .circle_contain{
         width: 100%;
         .circle_details{
@@ -174,7 +219,6 @@ main{
             padding-right: 30px;
             font-size: 12px;
         }
-    
     }
     .star_element{
         .span_star{
@@ -202,11 +246,55 @@ main{
     }
     .location_name_bloc1{
         order: 0;
+        
     }
     .location_name_bloc2{
         order: 1;
+        
+    }
+    .circle_contain{
+        order: 3;
+        
+    }
+    .star_contain{
+        order: 2;
+        
     }
     .box_contain{
         min-height: 100vh;
     }
+    .detail_aboutlocation{
+        font-size: 20px;
+    }
+}
+@media (max-width: 420px){
+    .detail_aboutlocation{
+        font-size: 15px;
+    } 
+}
+@media (max-width: 1155px){
+    .circle_contain{
+        .circle_details{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 10px;
+        }
+    
+    }
+
+}
+@media (max-width: 747px){
+    .circle_contain{
+        .circle_details{
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 7px;
+            padding-right: 7px;
+            font-size: 7px;
+        }
+    
+    }
+
 }
