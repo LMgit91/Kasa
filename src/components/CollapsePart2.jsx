@@ -15,6 +15,6 @@ export default function CollapseItem({title, content}){
 
     return(<div>
                 <div className='box2'><span>{title}</span><span className='collapseSpan' onClick={funcVisibility}><FontAwesomeIcon  style={showText ? {'transform' : 'rotate(180deg)', 'transition': '0.5s'} : {'transition': '0.5s'}}  icon={faAngleUp} /></span></div>
-                <p style={showText ? {'minHeight' : '20px' } : {'overflow' : 'hidden', 'maxHeight': '0'}} className={`para_modified`}>{content}</p>
+                <p style={showText ? {'minHeight' : '20px', 'overflow' : 'visible'} : {'overflow' : 'hidden', 'maxHeight': '0'}} className={`para_modified`}>{content}</p>
             </div>)
 }
