@@ -39,7 +39,7 @@ export default function LocationList({dataAppartement}){
                     <div className="small_bloc_ajustment_one">
                         <div className="small_bloc_ajustment_two">
                                 <NameInfo dataStorage={valueLocation} />
-                            <div>
+                            <div className="hostAdjustment">
                                 <Host dataStorage={valueLocation} />
                             </div>
                             <div className="circle_contain">
