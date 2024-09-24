@@ -12,17 +12,18 @@
             .container_article{
                 display: flex;
                 flex-wrap: wrap;
-                gap: 40px;
+                gap: 50px;
                 justify-content: center;
                 align-items: center;
                 padding-top: 50px;
                 padding-bottom: 50px;
                 .linkAdjustment{
-                    width: 28%;
-                    height: 200px;
+                    width: 26%;
+                    height: 340px;
                     text-decoration: none;
                     display: flex;
                     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(0,0,0,0.3));
+                    border-radius: 7px;
                 }
                 img{
                     object-fit: cover;
@@ -36,7 +37,7 @@
                 }
                 figcaption{
                     color: white;
-                    font-size: 15px;
+                    font-size: 14px;
                     text-align: start;
                     position: relative;
                     bottom: 30px;
