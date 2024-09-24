@@ -21,48 +21,6 @@ img{
     width: 70%;
     min-height: 500px; 
 }
-.visibility{
-    overflow: visible;
-    min-height: 57px;
-}
-.non_visibility{
-    overflow: hidden;
-    height: 57px;
-}
-.box2{
-    display: flex;
-    justify-content: space-between;
-    background-color: #FF6060;
-    color: white;
-    font-size: 25px;
-    border-radius: 5px;
-    height: 37px;
-    padding-left: 10px;
-    padding-top: 13px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-}
-.para_modified{
-    background-color: #F6F6F673;
-    padding-top: 10px;
-    padding-left: 10px;
-    font-size: 20px;
-}
-/*@keyframes glissement {
-    from {
-      margin-top: 0;  
-      height: 1%;
-    }
-  
-    to {
-      margin-bottom: 100%;
-      height: 100%;
-      max-height: max-content;
-    }
-  }*/
-.collapseSpan{
-    cursor: pointer;
-}
 
 @media (max-width: 900px) {
     .main_container{
