@@ -1,0 +1,30 @@
+    
+    .main-contain{
+        margin-top: 160px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 120px;
+        height: 100vh;
+        
+    }
+    .contain_error1{
+        font-size: 150px;
+        color: red;
+    }
+    .contain_error2{
+        color: red;
+        font-size: 35px;
+    }
+    .contain_error3{
+        color: black;
+    }
+
+    @media (max-width: 450px){
+        .contain_error1{
+            font-size: 110px;
+        }
+        .contain_error2{
+            font-size: 20px;
+        }
+    }
