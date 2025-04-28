@@ -1,0 +1,37 @@
+
+img{
+    object-fit: cover;
+}
+.image_2{
+    width: 80%;
+    border-radius: 20px;
+    height: 160px;
+}
+.main_container{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    min-height: 80vh;
+    padding-top: 40px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+    min-height: 500px; 
+}
+
+@media (max-width: 900px) {
+    .main_container{
+        width: 100%;
+    }
+    .container{
+        width: 80%;
+    }    
+}
+@media (max-width: 600px){
+    .container{
+        width: 95%;
+    }
+}
